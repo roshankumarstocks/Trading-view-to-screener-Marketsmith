@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "responseHeaders": [
+                {
+                    "header": "x-frame-options",
+                    "operation": "remove"
+                },
+                {
+                    "header": "content-security-policy",
+                    "operation": "remove"
+                }
+            ]
+        },
+        "condition": {
+            "urlFilter": "screener.in",
+            "resourceTypes": [
+                "sub_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "Origin",
+                    "operation": "set",
+                    "value": "https://www.screener.in"
+                },
+                {
+                    "header": "Referer",
+                    "operation": "set",
+                    "value": "https://www.screener.in/"
+                }
+            ]
+        },
+        "condition": {
+            "urlFilter": "screener.in",
+            "resourceTypes": [
+                "sub_frame",
+                "xmlhttprequest"
+            ]
+        }
+    }
+]

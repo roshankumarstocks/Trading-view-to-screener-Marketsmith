@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "TradingView to Screener",
+  "version": "1.0",
+  "description": "Adds a button to TradingView to open Screener.in",
+  "permissions": [
+    "activeTab",
+    "declarativeNetRequest",
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.screener.in/*",
+    "*://*.marketsmithindia.com/*",
+    "*://*.tradingview.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.tradingview.com/*",
+        "*://*.marketsmithindia.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}

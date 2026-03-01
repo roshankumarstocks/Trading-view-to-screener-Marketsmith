@@ -1,4 +1,4 @@
-# TradingView to Screener Extension
+# TradingView to Screener & Marketsmith Extension
 
 ## Overview
 This Chrome Extension natively integrates with TradingView, adding quick-access buttons to your top chart header. These buttons allow you to instantly view fundamental financial data for the currently active stock symbol on [Screener.in](https://www.screener.in) or evaluate it on [MarketSmith India](https://marketsmithindia.com/). 
@@ -30,3 +30,5 @@ This extension utilizes the **Manifest V3** standard APIs and works smoothly acr
 4. Click the **Load unpacked** button that appears.
 5. In the file explorer popup, choose this exact directory (the folder containing the `manifest.json` file).
 6. The extension is now successfully installed! Open up TradingView to play around with the newly injected buttons in the top header.
+
+Contact in X : https://x.com/RoshanStocks

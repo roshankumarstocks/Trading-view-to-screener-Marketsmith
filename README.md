@@ -31,4 +31,6 @@ This extension utilizes the **Manifest V3** standard APIs and works smoothly acr
 5. In the file explorer popup, choose this exact directory (the folder containing the `manifest.json` file).
 6. The extension is now successfully installed! Open up TradingView to play around with the newly injected buttons in the top header.
 
+Explanation Video : https://x.com/RoshanStocks/status/2028173012051341529?s=20
 Contact in X : https://x.com/RoshanStocks
+
